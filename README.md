@@ -65,10 +65,10 @@ where `A` is a tridiagonal matrix and `f` is the forcing term scaled by `h^2`.
    git clone https://github.com/username/1D-heat-diffusion-problem.git
    cd 1D-heat-diffusion-problem
 
-2. Compile the program
+2. Make bash.sh executable
    ```bash
-   g++ -o heat_solver main.cpp -std=c++17 -lm
+    chmod +x bash.sh
 
 3. Run the executable
    ```bash
-   ./heat_solver
+   ./build/Matrix
