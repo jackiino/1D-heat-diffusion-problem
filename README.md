@@ -18,21 +18,21 @@ This repository contains C++ code for solving the **1D heat diffusion problem** 
 
 We solve the **1D steady-state heat equation**:
 
-\[
+$$
 -\frac{d^2 u}{dx^2} = f(x), \quad x \in [0, L]
-\]
+$$
 
 with **Dirichlet boundary conditions**:
 
-\[
+$$
 u(0) = \alpha, \quad u(L) = \beta
-\]
+$$
 
 The domain `[0, L]` is discretized into `N` intervals with spacing `h = L / (N + 1)`. The finite difference approximation leads to a tridiagonal system:
 
-\[
+$$
 A \mathbf{u} = \mathbf{f}
-\]
+$$
 
 where `A` is a tridiagonal matrix and `f` is the forcing term scaled by `h^2`.
 
